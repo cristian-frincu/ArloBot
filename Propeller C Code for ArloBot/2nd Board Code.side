@@ -1,0 +1,10 @@
+2nd Board Code.c
+>compiler=C
+>memtype=cmm main ram compact
+>optimize=-Os
+>-m32bit-doubles
+>-Wall
+>-fno-exceptions
+>defs::-std=c99 -I../../../../.arlobot/
+>-lm
+>BOARD::QUICKSTART

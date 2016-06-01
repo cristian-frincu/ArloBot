@@ -1,0 +1,2 @@
+bool    relayPresent
+bool[]  relayOn
