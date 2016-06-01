@@ -68,8 +68,8 @@ By using the #define lines, code for items you do not have is never seen by the 
 
 // QUESTION: Do you have PING sensors on the back of your robot?
 #define hasRearPingSensors
-#define FIRST_REAR_PING_SENSOR_NUMBER 8 // Count from 0
-#define HOW_MANY_REAR_PING_SENSORS 1
+#define FIRST_REAR_PING_SENSOR_NUMBER 6 // Count from 0
+#define HOW_MANY_REAR_PING_SENSORS 3
 
 // QUESTION: Do you have IR sensors on the front of your robot?
 //#define hasFrontIRSensors
@@ -103,9 +103,9 @@ All of these will be assumed to face forward. */
    Remember the order is based on the order that they are plugged
    in to your board.
    WARNING: Be sure the array has the correct number of entries! */
-const int haltDistance[NUMBER_OF_PING_SENSORS] = {2,2,2,2};
+const int haltDistance[NUMBER_OF_PING_SENSORS] = {2,2,2,2,2,2};
 //const int haltDistance[NUMBER_OF_PING_SENSORS] = {5, 10, 12, 10, 5, 5, 10, 12, 10, 5, 10, 12, 10, 12};
-const int startSlowDownDistance[NUMBER_OF_PING_SENSORS] = {0,0,0,0};
+const int startSlowDownDistance[NUMBER_OF_PING_SENSORS] = {0,0,0,0,0,0};
 //const int startSlowDownDistance[NUMBER_OF_PING_SENSORS] = {8, 40, MAX_DISTANCE, 40, 8, 8, 40, MAX_DISTANCE, 40, 8, 40, MAX_DISTANCE, 40, MAX_DISTANCE};
 // Set shorter distances for IR sensors because they are less reliable.
 const int IRstartSlowDownDistance[NUMBER_OF_IR_SENSORS] = {};
@@ -122,12 +122,12 @@ does not apply to them. */
 #define FRONT_FAR_LEFT_SENSOR 11
 //#define FRONT_NEAR_RIGHT_SENSOR 3
 #define FRONT_FAR_RIGHT_SENSOR 10
-//#define REAR_FAR_RIGHT_SENSOR 5
+#define REAR_FAR_RIGHT_SENSOR 7
 //#define REAR_NEAR_RIGHT_SENSOR 6
 #define REAR_CENTER_SENSOR 8
 // NOTE: IF you comment out the REAR_CENTER_SENSOR, then ALL Rear sensors are ignored for escaping!
 //#define REAR_NEAR_LEFT_SENSOR 8
-//#define REAR_FAR_LEFT_SENSOR 9
+#define REAR_FAR_LEFT_SENSOR 6
 //#define FRONT_UPPER_DECK_NEAR_LEFT_SENSOR 10
 //#define FRONT_UPPER_DECK_CENTER_SENSOR 11
 //#define FRONT_UPPER_DECK_NEAR_RIGHT_SENSOR 12
