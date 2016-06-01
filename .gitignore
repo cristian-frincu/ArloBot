@@ -1,0 +1,9 @@
+*.pyc
+/Propeller\ C\ Code\ for\ ArloBot/cmm/
+/bin
+/docs
+/lib
+/build
+/devel
+.idea
+src/CMakeLists.txt
