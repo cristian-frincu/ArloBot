@@ -1,11 +1,18 @@
 ROS Interface for ArloBot.c
+<<<<<<< HEAD
 per_robot_settings_for_propeller_c_code.h
+=======
+>>>>>>> aaf51d308fa58fecd3ac114175066583f8e5f1e2
 >compiler=C
 >memtype=cmm main ram compact
 >optimize=-Os
 >-m32bit-doubles
 >-fno-exceptions
 >-enable_pruning
+<<<<<<< HEAD
 >defs::-std=c99 
+=======
+>defs::-std=c99 -I../../../../.arlobot/
+>>>>>>> aaf51d308fa58fecd3ac114175066583f8e5f1e2
 >-lm
 >BOARD::ACTIVITYBOARD

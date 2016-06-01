@@ -208,7 +208,11 @@ for use with the
 script.
 Do not try to use it with ROS, as the extra output will confuse it. */
 
+<<<<<<< HEAD
 #define debugModeOn
+=======
+//#define debugModeOn
+>>>>>>> aaf51d308fa58fecd3ac114175066583f8e5f1e2
 
 /* You can disable this for use with the
 /home/chrisl8/catkin_ws/src/Metatron/scripts/direct2PropSerialTest.sh
@@ -217,4 +221,8 @@ Sometimes this is helpful to clean up the output for debugging.
 This MUST be enabled for ROS to work though!
 */
 
+<<<<<<< HEAD
 //#define enableOutput // Do NOT comment this out when running ROS!
+=======
+#define enableOutput // Do NOT comment this out when running ROS!
+>>>>>>> aaf51d308fa58fecd3ac114175066583f8e5f1e2

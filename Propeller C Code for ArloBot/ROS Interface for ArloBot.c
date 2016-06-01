@@ -775,7 +775,10 @@ void pollGyro(void *par) {
     // This may or may not improve performance.
     int blockedSensor[NUMBER_OF_PING_SENSORS] = {0};
     int i, blockedF = 0, blockedR = 0, foundCliff = 0, floorObstacle = 0, pleaseEscape = 0, minDistance = 255, minRDistance = 255, newSpeedLimit = 100;
+<<<<<<< HEAD
     int ignoreEscaping=0;
+=======
+>>>>>>> aaf51d308fa58fecd3ac114175066583f8e5f1e2
     while (1) {
         if (ignoreProximity == 0) {
             // Reset blockedSensor array to all zeros.
@@ -1083,7 +1086,11 @@ void pollGyro(void *par) {
                 }
                 Escaping = 0; // Have fun!
             } else {
+<<<<<<< HEAD
                 if (pleaseEscape == 1 && pluggedIn == 0 && ignoreEscaping == 0) {
+=======
+                if (pleaseEscape == 1 && pluggedIn == 0) {
+>>>>>>> aaf51d308fa58fecd3ac114175066583f8e5f1e2
                     // If it is plugged in, don't escape!
                     Escaping = 1; // This will stop main thread from driving the motors.
                     /* At this point we are blocked, so it is OK to take over control
